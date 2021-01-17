@@ -1,0 +1,42 @@
+hr {
+  @include tab {
+    margin-bottom: 60px;
+  }
+}
+
+.reserve-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  @include tab {
+    flex-direction: column-reverse;
+  }
+  &_content {
+    width: 335px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tab {
+      width: 100%;
+      margin-top: 60px;
+      // justify-content: space-between;
+    }
+  }
+}
+
+.reserve-title {
+  color: #7070704D;
+  font-size: 3.2rem;
+  font-weight: bold;
+  @include tab {
+    font-size: 1.8rem;
+  }
+}
+
+
+.reserve-border {
+  color: #707070;
+  border: 1px solid;
+  padding: 10px 40px;
+}

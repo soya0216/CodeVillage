@@ -1,0 +1,51 @@
+.menu {
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.menu-wrap {
+  // width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include tab {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  width: 20%;
+  @include tab {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+
+.menu__content {
+  @include tab {
+  }
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 34px;
+    @include tab {
+      text-align: initial;
+      margin-left: 13px;
+    }
+  }
+  &__intro {
+    padding-top: 34px;
+    font-weight: bold;
+    margin-left: 13px;
+  }
+  &__money {
+    text-align: right;
+    font-weight: bold;
+    padding-top: 34px;
+  }
+}

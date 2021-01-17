@@ -1,0 +1,511 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 11px;
+  color: #707070;
+}
+@media screen and (max-width: 959px) {
+  .title {
+    margin-bottom: 50px;
+  }
+}
+.title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid;
+  width: 4em;
+  margin-left: 1.7rem;
+}
+@media screen and (max-width: 959px) {
+  .title:after {
+    margin-left: 3rem;
+  }
+}
+
+.inner {
+  width: 76.6%;
+  padding: 260px 0 70px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 959px) {
+  .inner {
+    padding: 60px 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  z-index: 10;
+}
+@media screen and (max-width: 959px) {
+  header {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+  }
+}
+
+.hd-logo {
+  font-size: 3.8rem;
+  letter-spacing: 3.8px;
+  font-weight: bold;
+}
+@media screen and (max-width: 959px) {
+  .hd-logo {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  nav {
+    display: none;
+  }
+}
+nav ul {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  letter-spacing: 1.8px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+nav ul li:not(:first-child) {
+  color: #707070;
+}
+
+.ham {
+  display: none;
+}
+@media screen and (max-width: 959px) {
+  .ham {
+    width: 16px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #3B4043;
+  }
+}
+
+.more:hover {
+  text-decoration: underline;
+}
+
+.first-v {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 959px) {
+  .first-v {
+    position: relative;
+  }
+}
+
+.ft-text {
+  text-align: center;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media screen and (max-width: 959px) {
+  .ft-text {
+    position: absolute;
+    flex-direction: column-reverse;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 16px black;
+    height: 20%;
+    margin-left: 20%;
+  }
+}
+.ft-text .catch {
+  font-family: serif;
+  font-size: 3.8rem;
+}
+@media screen and (max-width: 959px) {
+  .ft-text .catch {
+    font-size: 2.2rem;
+  }
+}
+.ft-text .sab-catch {
+  font-family: 'Zapfino', sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: 3.8px;
+}
+@media screen and (max-width: 959px) {
+  .ft-text .sab-catch {
+    font-size: 2.8rem;
+  }
+}
+
+.ft-v-img {
+  background-image: url(../img/component.png);
+  width: 58%;
+  height: 100vh;
+  background-size: cover;
+}
+@media screen and (max-width: 959px) {
+  .ft-v-img {
+    width: 100%;
+  }
+}
+
+.concept {
+  background: linear-gradient(to bottom, #A193861F 20%, #A1938689 80%);
+}
+
+.concept-img {
+  display: flex;
+  justify-content: space-between;
+}
+.concept-img_1 {
+  padding-right: 11px;
+}
+
+.concept-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  color: #FFFFFF;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 959px) {
+  .concept-item {
+    display: block;
+    margin-top: 50px;
+  }
+}
+.concept-item_desc {
+  font-family: serif;
+  font-size: 4rem;
+}
+@media screen and (max-width: 959px) {
+  .concept-item_desc {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+.concept-item_desc2 {
+  width: 50%;
+}
+@media screen and (max-width: 959px) {
+  .concept-item_desc2 {
+    width: auto;
+    margin: auto;
+    padding-top: 18px;
+  }
+}
+
+.menu__img {
+  width: 100%;
+}
+.menu__img img {
+  width: 100%;
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 959px) {
+  .menu-wrap {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  width: 20%;
+}
+@media screen and (max-width: 959px) {
+  .menu-item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.menu__content__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-top: 34px;
+}
+@media screen and (max-width: 959px) {
+  .menu__content__title {
+    text-align: initial;
+    margin-left: 13px;
+  }
+}
+.menu__content__intro {
+  padding-top: 34px;
+  font-weight: bold;
+  margin-left: 13px;
+}
+.menu__content__money {
+  text-align: right;
+  font-weight: bold;
+  padding-top: 34px;
+}
+
+.access {
+  width: 100%;
+  overflow: hidden;
+  background-color: #A193861F;
+}
+
+.address-wrap {
+  box-sizing: border-box;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #D0C5BA;
+}
+@media screen and (max-width: 959px) {
+  .address-wrap {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+
+.ad-detail {
+  text-align: left;
+  margin-left: 12%;
+  height: auto;
+}
+@media screen and (max-width: 959px) {
+  .ad-detail {
+    width: 100%;
+    height: 400px;
+  }
+}
+.ad-detail_title {
+  color: #00000038;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  margin-top: 25%;
+}
+@media screen and (max-width: 959px) {
+  .ad-detail_title {
+    margin-top: 30px;
+  }
+}
+
+.address {
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+.address li:not(:first-child) {
+  padding-top: 23px;
+}
+
+.map {
+  width: 60%;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 959px) {
+  .map {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  hr {
+    margin-bottom: 60px;
+  }
+}
+
+.reserve-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+@media screen and (max-width: 959px) {
+  .reserve-wrap {
+    flex-direction: column-reverse;
+  }
+}
+.reserve-wrap_content {
+  width: 335px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .reserve-wrap_content {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+.reserve-title {
+  color: #7070704D;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 959px) {
+  .reserve-title {
+    font-size: 1.8rem;
+  }
+}
+
+.reserve-border {
+  color: #707070;
+  border: 1px solid;
+  padding: 10px 40px;
+}
+
+/*# sourceMappingURL=main.css.map */

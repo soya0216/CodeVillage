@@ -1,0 +1,43 @@
+.concept {
+  background: linear-gradient(to bottom, $ash 20%, #A1938689 80%);
+}
+
+
+.concept-img {
+  display: flex;
+  justify-content: space-between;
+  &_1 {
+    padding-right: 11px;
+  }
+}
+
+
+.concept-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  color: #FFFFFF;
+    width: 100%;
+    height: auto;
+  @include tab {
+    display: block;
+    margin-top: 50px;
+  }
+  &_desc {
+    font-family: serif;
+    font-size: 4rem;
+    @include tab {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+  &_desc2 {
+    width: 50%;
+    @include tab {
+      width: auto;
+      margin: auto;
+      padding-top: 18px;
+    }
+  }
+}

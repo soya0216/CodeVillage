@@ -1,0 +1,65 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  z-index: 10;
+  @include tab {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+  }
+}
+
+.hd-logo {
+  font-size: 3.8rem;
+  letter-spacing: 3.8px;
+  font-weight: bold;
+  @include tab{
+    font-size: 2.5rem;
+  }
+}
+
+nav {
+  @include tab {
+    display: none;
+  }
+  ul {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      letter-spacing: 1.8px;
+      margin-left: 20px;
+      font-weight: bold;
+      &:not(:first-child) {
+        color: #707070;
+      }
+    }
+  } 
+}
+
+.ham {
+  display: none;
+  @include tab {
+    width: 16px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span {
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #3B4043;
+    }
+  }
+}
+
+.more:hover {
+  text-decoration: underline;
+}
