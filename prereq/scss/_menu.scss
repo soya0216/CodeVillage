@@ -1,0 +1,46 @@
+.menu {
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  @include tab {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  width: 20%;
+  @include tab {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+
+.menu__content {
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 34px;
+    @include tab {
+      text-align: initial;
+      margin-left: 13px;
+    }
+  }
+  &__intro {
+    padding-top: 34px;
+    letter-spacing: 1.6px;
+    margin-left: 13px;
+  }
+  &__money {
+    text-align: right;
+    padding-top: 34px;
+  }
+}
